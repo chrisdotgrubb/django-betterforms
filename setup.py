@@ -15,7 +15,7 @@ def read(fname):
 
 
 setup(
-	name='grubb-betterforms',
+	name='django-betterforms',
 	version=version,
 	description=__doc__,
 	long_description=read('README.rst'),

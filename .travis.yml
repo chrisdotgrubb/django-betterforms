@@ -13,13 +13,13 @@ env:
     - TOX_ENV=dj20
     - TOX_ENV=djdev
 matrix:
-   exclude:
-      - python: "2.7"
-        env: TOX_ENV=dj20
-      - python: "2.7"
-        env: TOX_ENV=djdev
-   allow_failures:
-      - env: TOX_ENV=djdev
+  exclude:
+    - python: "2.7"
+      env: TOX_ENV=dj20
+    - python: "2.7"
+      env: TOX_ENV=djdev
+  allow_failures:
+    - env: TOX_ENV=djdev
 install:
   - pip install --upgrade pip
   - pip install tox
